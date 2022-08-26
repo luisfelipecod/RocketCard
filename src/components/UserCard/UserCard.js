@@ -24,6 +24,7 @@ export const Wrapper = styled.div`
 export const HeaderCard = styled.header`
     display: flex;
     align-items: center;
+    gap: 20px;
 
     margin-top: 38px;
     margin-left: 34px;
@@ -31,7 +32,21 @@ export const HeaderCard = styled.header`
     width: 230px;
     height: 55px;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
+
+    & > div{
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+
+        border-radius: 50%;
+        border:1px solid #fff;
+    }
+
+    & > div > img {
+        width: 100%;
+        height: 100%;
+    }
 `
 
 export const Avatar = styled.div`

@@ -11,11 +11,18 @@ import followersIcon from "../../assets/followers.svg"
 import followingIcon from "../../assets/following.svg"
 import locationIcon from "../../assets/location.svg"
 import repositoryIcon from "../../assets/repository.svg"
+import logo from "../../assets/logo.svg"
 
 export function UserCard(){
     return (
         <Wrapper>
-            <HeaderCard>Birobiro</HeaderCard>
+            <HeaderCard>
+                <div>
+                    <img src={logo} alt="Um desenhos de um foguete(que é logo da Rocketseat)" />
+                </div>
+                Birobiro
+            </HeaderCard>
+
             <Avatar>
                 <img src="https://source.unsplash.com/random" alt="Uma imagem de perfil" />
             </Avatar>
@@ -23,7 +30,7 @@ export function UserCard(){
                 <ul>
                     <li>
                         <img src={followersIcon} alt="Icone de Seguidores" />
-                        716 Seguidores
+                        716 Seguidores 
                     </li>
 
                     <li>
