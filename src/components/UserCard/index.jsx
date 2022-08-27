@@ -18,7 +18,7 @@ export function UserCard(){
         <Wrapper>
             <HeaderCard>
                 <div>
-                    <img src={logo} alt="Um desenhos de um foguete(que é logo da Rocketseat)" />
+                    <img src={logo} alt="Um desenhos de um foguete(que é o logo da Rocketseat)" />
                 </div>
                 Birobiro
             </HeaderCard>
@@ -54,7 +54,10 @@ export function UserCard(){
                     </li>
                 </ul>
             </InfoUserCard>
-            <FooterCard>ROCKETCARD</FooterCard>
+            <FooterCard>
+                <img src={logo} alt="Um desenhos de um foguete(que é o logo da Rocketseat)" />
+                ROCKETCARD
+            </FooterCard>
         </Wrapper>
     )
 }

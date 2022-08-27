@@ -32,8 +32,6 @@ export const HeaderCard = styled.header`
     width: 230px;
     height: 55px;
 
-    /* border: 2px solid red; */
-
     & > div{
         width: 36px;
         height: 36px;
@@ -103,13 +101,20 @@ export const InfoUserCard = styled.div`
 
 export const FooterCard = styled.footer`
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    gap: 11px;
+    
+    position: absolute;
+    right: 7px;
+    bottom: 27px;
+
     width: 184px;
     height: 35px;
 
-    position: absolute;
-    
-    right: 7px;
-    bottom: 27px;
-    border: 2px solid red;
+    font-size: 20px;
+
+    & > img {
+        height: 100%;
+    }
 `
