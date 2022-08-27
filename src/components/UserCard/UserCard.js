@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     
     border-inline: 15px;
     border-block: 26px;
-    border-color: black;
+    border-color: ${props => props.inputBorderColor || "#000000"};;
     border-style: solid;
     border-radius: 50px;
 
@@ -106,7 +106,7 @@ export const FooterCard = styled.footer`
     gap: 11px;
     
     position: absolute;
-    right: 7px;
+    right: 17px;
     bottom: 27px;
 
     width: 184px;
