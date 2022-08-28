@@ -13,9 +13,9 @@ import locationIcon from "../../assets/location.svg"
 import repositoryIcon from "../../assets/repository.svg"
 import logo from "../../assets/logo.svg"
 
-export function UserCard(){
+export function UserCard({randomBorderColor}){
     return (
-        <Wrapper>
+        <Wrapper inputBorderColor={randomBorderColor}>
             <HeaderCard>
                 <div>
                     <img src={logo} alt="Um desenhos de um foguete(que é o logo da Rocketseat)" />

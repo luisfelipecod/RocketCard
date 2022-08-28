@@ -1,9 +1,9 @@
 import { ButtonStyle } from './Button'
 
-export function Button({children}){
+export function Button({children,changeBorderColorCard}){
     return (
         <>
-            <ButtonStyle>{children}</ButtonStyle>
+            <ButtonStyle onClick={changeBorderColorCard}>{children}</ButtonStyle>
         </>
     )
 }

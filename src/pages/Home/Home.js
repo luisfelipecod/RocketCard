@@ -21,8 +21,8 @@ export const MainContainer = styled.main`
     align-items: center;
     flex-direction: column;
 
-    height: 90vh;
+    min-height: 90vh;
 `
 
 export const SectionContainer = styled(MainContainer)`
-`//SectionContainer irá herdar os estilos do Maincontainer
+`

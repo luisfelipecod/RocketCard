@@ -2,15 +2,17 @@ import styled from "styled-components";
 
 
 export const Wrapper = styled.div`
-    width: 438px;
-    height: 693px;
+    width: 408px;
+    height: 651px;
 
     margin-inline: auto;
     position: relative;
 
+    border-top: 24px;
+    border-right: 15px;
+    border-bottom: 25px;
+    border-left: 16px;
     
-    border-inline: 15px;
-    border-block: 26px;
     border-color: ${props => props.inputBorderColor || "#000000"};;
     border-style: solid;
     border-radius: 50px;
