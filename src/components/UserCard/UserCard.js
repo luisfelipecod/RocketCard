@@ -31,7 +31,6 @@ export const HeaderCard = styled.header`
     margin-top: 38px;
     margin-left: 34px;
 
-    width: 230px;
     height: 55px;
 
     & > div{
@@ -74,7 +73,7 @@ export const InfoUserCard = styled.div`
     justify-content: center;
 
     position: absolute;
-    width: 195px;
+    padding-inline: 20px;
     height: 194px;
     bottom: 96px;
     left: 21px;
