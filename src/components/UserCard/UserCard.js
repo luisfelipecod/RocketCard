@@ -55,7 +55,7 @@ export const Avatar = styled.div`
     width:372px;
     height: 370px;
 
-    border:10px solid #8257E5;
+    border:10px solid ${props => props.inputBorderColor || "#000000"};;
     border-radius: 50%;
 
 

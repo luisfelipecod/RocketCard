@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { randomColorGenerator } from "../../features/generateRandomColor";
 
-import { 
+import {
     Container,
     MainContainer,
     SectionContainer,
@@ -11,25 +11,53 @@ import { UserCard } from "../../components/UserCard";
 import { Button } from "../../components/Button";
 
 
-export function Home(){
-    const [borderColor,setBorderColor] = useState('');
+export function Home() {
+    const [borderColor, setBorderColor] = useState('');
+    const [infosUserCard, setInfosUserCard] = useState({
+        name:'',
+        avatar:'',
+        followers: 0,
+        following: 0,
+        publicRepos: 0,
+        company: '',
+        location: '',
+    })
 
-    function changeBorderColorCard(){
+    function changeBorderColorCard() {
         const color = randomColorGenerator()
 
         setBorderColor(color)
     }
 
+    useEffect(() => {
+        async function getInfosUserCard() {
+            const responseFetch = await fetch('https://api.github.com/users/luisfelipecod');
+            const  { followers,following,name,public_repos,company,location,avatar_url } = await responseFetch.json();
+
+            setInfosUserCard({
+                name,
+                avatar: avatar_url,
+                followers,
+                following,
+                publicRepos: public_repos,
+                company,
+                location,
+            })
+        }
+
+       getInfosUserCard()       
+    }, []);
+
     return (
-            <Container>
-                <MainContainer>
-                    <Title>Compartilhe seu #RocketCard</Title>
-                    <UserCard randomBorderColor={borderColor}/>
-                </MainContainer>,
-                <SectionContainer as="section">
+        <Container>
+            <MainContainer>
+                <Title>Compartilhe seu #RocketCard</Title>
+                <UserCard infosUser={infosUserCard} randomBorderColor={borderColor} />
+            </MainContainer>,
+            <SectionContainer as="section">
                 <Title>Customizar RocketCard</Title>
-                    <Button changeBorderColorCard={changeBorderColorCard}>Gerar Background</Button>
-                </SectionContainer>
-            </Container>
+                <Button changeBorderColorCard={changeBorderColorCard}>Gerar Background</Button>
+            </SectionContainer>
+        </Container>
     )
 }
