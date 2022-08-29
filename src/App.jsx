@@ -1,11 +1,22 @@
-import { Button } from "./components/Button/Button"
+import { Home } from "./pages/Home";
+import { createGlobalStyle } from "styled-components";
+
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: #0E1218;
+    color: #fff;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+  }
+`
 
 function App() {
   return (
-    <div>
-      <h1>Hello World !!!</h1>
-      <Button />
-    </div>
+    <>
+      <Home />
+      <GlobalStyle />
+    </>
   )
 }
 
