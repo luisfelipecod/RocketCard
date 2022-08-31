@@ -10,10 +10,13 @@ export const ButtonStyle = styled.button`
 
     background-color:#000000;
     color: #F1F1F1;
+    transition: box-shadow 500ms;
     border: none;
+
     cursor: pointer;
 
     &:hover{
-        background-color:#080808;
+        box-shadow: rgba(206, 206, 206, 0.16) 0px 3px 4px,
+                    rgba(206, 206, 206, 0.23) 0px 3px 4px;
     }
 `
