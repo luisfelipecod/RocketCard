@@ -53,7 +53,7 @@ export function Home() {
             <MainContainer>
                 <Title>Compartilhe seu #RocketCard</Title>
                 <UserCard infosUser={infosUserCard} randomBorderColor={borderColor} />
-            </MainContainer>,
+            </MainContainer>
             <SectionContainer as="section">
                 <Title>Customizar RocketCard</Title>
                 <Button changeBorderColorCard={changeBorderColorCard}>Gerar Background</Button>

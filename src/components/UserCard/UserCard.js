@@ -18,7 +18,6 @@ export const Wrapper = styled.div`
     border-radius: 50px;
 
     background-color: #0E1218;
-    color: #fff;
 
     overflow: hidden;
 `
