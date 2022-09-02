@@ -1,14 +1,6 @@
 import { Home } from "./pages/Home";
-import { createGlobalStyle } from "styled-components";
+import { GlobalStyle } from "./styles/global"
 
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    background-color:#0E1218;
-    color: #F1F1F1;
-    font-family: 'Prompt', sans-serif;
-  }
-`
 
 function App() {
   return (

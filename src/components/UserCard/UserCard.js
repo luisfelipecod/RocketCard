@@ -61,12 +61,14 @@ export const HeaderCard = styled.header`
     @media (max-width:1400px){
         margin-top: 27px;
         margin-left: 24px;
-
+        gap: 15px;
+        
         height: 39px;
 
         & > div{
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
+        padding: 4px;
     }
 }
 `
@@ -119,13 +121,14 @@ export const InfoUserCard = styled.div`
     & > ul{
         list-style: none;
         padding: 0;
+        margin: 0;
     }
     & > ul > li{
         display: flex;
         align-items: center;
         gap: 10px;
 
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 24px;
 
@@ -135,8 +138,6 @@ export const InfoUserCard = styled.div`
         height: 136px;
         bottom: 67px;
         left: 15px;
-
-        font-size: 16px;
     }
 `
 
