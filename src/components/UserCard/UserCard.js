@@ -1,25 +1,37 @@
 import styled from "styled-components";
 
-
 export const Wrapper = styled.div`
-    width: 408px;
-    height: 651px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    margin-inline: auto;
-    position: relative;
+    width: 438px;
+    height: 693px;
 
-    border-top: 24px;
-    border-right: 15px;
-    border-bottom: 25px;
-    border-left: 16px;
-    
-    border-color: ${props => props.inputBorderColor || "#000000"};;
-    border-style: solid;
+    background-color: ${props => props.inputBorderColor || "#000000"};;
     border-radius: 50px;
 
+    @media (max-width:1400px){
+        width: 307px;
+        height: 485px;
+    }
+`
+
+export const ContentCard = styled.div`
+    width: 407px;
+    height: 644px;
+
+    position: relative;
+
+    border-radius: 50px;
     background-color: #0E1218;
 
     overflow: hidden;
+
+    @media (max-width:1400px){
+        width: 286px;
+        height: 456px;
+    }
 `
 
 export const HeaderCard = styled.header`
@@ -45,6 +57,18 @@ export const HeaderCard = styled.header`
         width: 100%;
         height: 100%;
     }
+
+    @media (max-width:1400px){
+        margin-top: 27px;
+        margin-left: 24px;
+
+        height: 39px;
+
+        & > div{
+        width: 25px;
+        height: 25px;
+    }
+}
 `
 
 export const Avatar = styled.div`
@@ -63,6 +87,15 @@ export const Avatar = styled.div`
         width: 100%;
         height: 100%;
         border-radius: inherit;
+    }
+
+    @media (max-width:1400px){
+        margin-top: 22px;
+
+        width:260px;
+        height: 269px;
+
+        transform: translateX(53px);
     }
 `
 
@@ -96,7 +129,15 @@ export const InfoUserCard = styled.div`
         font-weight: 400;
         line-height: 24px;
 
-    }                           
+    }   
+    
+    @media (max-width:1400px){
+        height: 136px;
+        bottom: 67px;
+        left: 15px;
+
+        font-size: 16px;
+    }
 `
 
 export const FooterCard = styled.footer`
@@ -116,5 +157,13 @@ export const FooterCard = styled.footer`
 
     & > img {
         height: 100%;
+    }
+
+    @media (max-width:1400px){
+        right: 12px;
+        bottom: 19px;
+
+        width: 129px;
+        height: 25px;
     }
 `
