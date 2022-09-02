@@ -6,8 +6,8 @@ export const Container = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     gap: 8%;
-    
-    min-height: 100vh;
+
+    min-height:100vh;
 `
 
 export const Title = styled.h1`
@@ -20,8 +20,6 @@ export const MainContainer = styled.main`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    min-height: 90vh;
 `
 
 export const SectionContainer = styled(MainContainer)`
