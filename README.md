@@ -10,7 +10,7 @@ Criar um Card que troca a cor da borda aleatóriamente e que também receba os d
 ## Tecnologias Utilizadas 
 
 <ul>
-  <li>React</li>
+  <li>ReactJS</li>
   <li>Styled Components</li>
   <li>Github API</li>
 </ul>
