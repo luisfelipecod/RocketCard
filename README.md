@@ -12,6 +12,7 @@ Criar um Card que troca a cor da borda aleatóriamente e que também receba os d
 <ul>
   <li>React</li>
   <li>Styled Components</li>
+  <li>Github API</li>
 </ul>
  
 ## Fonte do Layout
