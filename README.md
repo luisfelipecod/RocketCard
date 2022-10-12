@@ -5,7 +5,7 @@
 <h4 align = "center"><a href = "https://reocketcard-lf.netlify.app">Clique aqui para visitar o projeto</a></h4>
 </h3>
 
-<h2. Proposta do Desafio </h2>
+<h2>. Proposta do Desafio </h2>
 Criar um Card que troca a cor da borda aleatóriamente e que também receba os dados do usuário da API do Github
 
 
